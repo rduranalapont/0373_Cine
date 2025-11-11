@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights at Freddy's 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Borra hasta </script para desactivar el jumpscare-->
+
+<div id="jumpscare">
+        <video id="jumpscareVideo" muted>
+            <source src="img/videoplayback.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <audio id="jumpscareSound" src="tu-sonido.mp3"></audio>
+
+
+
+    <script>
+        let scrollCount = 0;
+        const scroll = document.getElementById('jumpscare');
+        const video = document.getElementById('jumpscareVideo');
+        const sound = document.getElementById('jumpscareSound');
+
+        window.addEventListener('scroll', () => {
+            if (++scrollCount % 20 === 0 && Math.random() < 0.05) {
+                scroll.style.display = 'block';
+                video.play();
+                sound.play();
+            }
+        });
+
+        scroll.addEventListener('click', () => {
+            scroll.style.display = 'none';
+            video.pause();
+            sound.pause();
+        });
+    </script>
+
+
+<div class="nav">
+
+<ul>
+    <li><a href="index.html#inicio">Inicio</a></li>
+    <li><a href="index.html#actores">Actores</a></li>
+    <li><a href="index.html#cines">Cines</a></li>
+    <li><a href="index.html#multimedia">Multimedia</a></li>
+    <li><a href="index.html#opinion">Opinión</a></li>
+    <li><a href="index.html#links">Links</a></li>
+
+</ul>
+
+</div>
+
+
+    <div class="contenedor1" id="inicio">
+
+
+    <h1>Five Nights at Freddy's 2</h1>
+<hr>
+<img src="img/bg.png" alt="">
+
+    <p>Five Nights at Freddy's 2 continúa la historia un año después de los eventos en la pizzería de Freddy Fazbear, con nuevos horrores y el regreso de Springtrap. 
+        En esta secuela dirigida por Emma Tammi, Mike (Josh Hutcherson) y Vanessa (Elizabeth Lail) intentan proteger a Abby, la hermana menor de Mike, ocultándole la 
+        verdad sobre los animatrónicos. Sin embargo, Abby decide reconectar con Freddy, Bonnie, Chica y Foxy, lo que desata una nueva ola de sucesos sobrenaturales. 
+        La historia se adentra en los secretos del pasado, mientras el villano Springtrap —la encarnación del mal y eco físico de William Afton— regresa con una presencia más amenazante que nunca.</p>
+    </div>
+<br>
+<hr>
+    <div class="contenedor2" id="actores">
+
+
+    <h1>Actores</h1>
+<hr>
+    <p>Presiona el nombre del actor para ir a su apartado</p>
+    <ul>
+        <li>Josh Hutcherson</li>
+        <li>Elizabeth Lail</li>
+        <li>Piper Rubio</li>
+        <li>Mathew Lilliard</li>
+    </ul>
+
+    </div>
+
+<br>
+<hr>
+    <div class="contenedorimagen">
+    <h2>Josh Hutcherson</h2>
+    <hr>
+    <div class="resumen">
+    <p>Mike regresa como el protagonista atormentado por su pasado y por los horrores de Freddy Fazbear’s Pizza. En esta entrega, su vínculo con los animatrónicos se intensifica mientras intenta proteger a su hermana Abby.</p>
+    <img src="img/Josh.jpg" alt="" class="imagen1">
+    </div>
+    </div>
+<br>
+    <div class="contenedorimagen">
+    <h2>Elizabeth Lail</h2>
+    <hr>
+    <div class="resumen">
+    <p>Vanessa, una agente de seguridad con un pasado misterioso, se convierte en una aliada clave para Mike. Su conexión con William Afton se vuelve más evidente, y su papel se vuelve más ambiguo.</p>
+    <img src="img/Elizabeth.jpg" alt="">
+    </div>
+    </div>
+<br>
+    <div class="contenedorimagen">
+    <h2>Piper Rubio</h2>
+    <hr>
+    <div class="resumen">
+    <p>Abby, la hermana menor de Mike, tiene una sensibilidad especial hacia los animatrónicos. Su relación con Freddy y los demás cobra protagonismo, revelando secretos ocultos sobre su familia.</p>
+    <img src="img/Piper.jpg" alt="">
+    </div>
+    </div>
+<br>
+    <div class="contenedorimagen">
+    <h2>Mathew Lilliard</h2>
+    <hr>
+    <div class="resumen">
+    <p>El villano central. Afton regresa en su forma más siniestra como Springtrap, un animatrónico poseído por su alma. Su presencia domina la película con una amenaza constante y escalofriante.</p>
+    <img src="img/Mathew.png" alt="">
+    </div>
+    </div>
+
+<hr>
+
+    <div class="contenedor3" id="cines">
+    <h1>Cines para visualizarla</h1>
+    <p>Estos son los cines en los que se podrá visualizar Five Nights at Freddy's</p>
+    <ul>
+        <li>Yelmo Cines</li>
+        <li>Cinesa</li>
+    </ul>
+    <img src="img/cine.png" alt="">
+
+
+    </div>
+
+<hr>
+
+    <div class="contenedor4" id="multimedia">
+    <h1>Multimedia</h1>
+    <img src="img/img1.jpg" alt="">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/si7z_oWC2B4?si=WMnxkven8gz7MBHz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+<hr>
+
+    <div class="contenedor5" id="opinion">
+    <h1>Opinión</h1>
+    <p>La película, que se estrena el 5 de diciembre de 2025, ha generado bastante expectativa gracias a su nuevo tráiler y las primeras reacciones positivas en proyecciones de prueba. Dirigida nuevamente por Emma Tammi y producida por Blumhouse, esta entrega continúa un año después de los eventos de la primera película, con Mike (Josh Hutcherson) y Vanessa (Elizabeth Lail) ocultando la verdad a Abby sobre los animatrónicos. Pero cuando Abby decide reconectar con Freddy y compañía, se desata una nueva ola de horrores</p>
+    <p>Lo más interesante es la introducción del personaje Henry Emily, interpretado por Skeet Ulrich, quien fue cofundador del restaurante junto a William Afton (Matthew Lillard). Esta rivalidad promete añadir una capa emocional y trágica, especialmente por la desaparición de la hija de Henry, Charlotte</p>
+    <p>Además, el diseño de merchandising como los cubos de palomitas con forma de escenario animatrónico ha causado sensación en redes, lo que demuestra el nivel de detalle y marketing que Blumhouse está invirtiendo en esta secuela</p>
+    <p>En resumen, Five Nights at Freddy’s 2 parece estar apostando por una narrativa más compleja, con nuevos personajes clave, más tensión emocional y un terror más psicológico, sin perder el encanto siniestro de los animatrónicos. Si te gustó la primera, esta promete subir la apuesta.</p>
+    
+    <form action="enviar_opinion.php" method="post">
+        <fieldset>
+          <legend>Nos gustaría leer tu opinión tras ver la película</legend>
+      
+          <label>Nombre:</label><br>
+          <input type="text" name="nombre" placeholder="Escribe tu nombre" required><br><br>
+      
+          <label>Email:</label><br>
+          <input type="email" name="email" placeholder="ejemplo@correo.com" required><br><br>
+      
+          <label>Fecha en que viste la película:</label><br>
+          <input type="date" name="fecha_vista" required><br><br>
+      
+          <label>Valoración:</label><br>
+          <select name="valoracion" required>
+            <option value="">Selecciona una opción</option>
+            <option value="1">1 - Muy mala</option>
+            <option value="2">2 - Mala</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Buena</option>
+            <option value="5">5 - Excelente</option>
+          </select><br><br>
+      
+          <label>Opinión personal:</label><br>
+          <textarea name="opinion" rows="5" cols="40" placeholder="Escribe tu opinión aquí..." required></textarea><br><br>
+      
+          <label>¿Recomendarías la película?</label><br>
+          <input type="radio" name="recomienda" value="sí" required> Sí
+          <input type="radio" name="recomienda" value="no"> No<br><br>
+          <input type="submit" value="Enviar opinión">
+        </fieldset>
+      </form>
+
+</div>
+<hr>
+
+    <div class="contenedor6" id="links">
+    <h1>Links</h1>
+    <ul>
+        <li><a href="https://freddy-fazbears-pizza.fandom.com/es/wiki/Five_Nights_at_Freddy%27s">Wikipedia de Five nights at Freddy's</a></li>
+        <li><a href="https://www.youtube.com/watch?v=gk-aCL6eyGc&list=RDgk-aCL6eyGc&start_radio=1">Cancion Five nights at Freddy's</a></li>
+        <li><a href="https://yelmocines.es/sinopsis/five-nights-at-freddys-2">Compra de entradas</a></li>
+        <li><a href="https://www.amazon.es/Five-Nights-at-Freddys-2/dp/B00PJ5AUCO">Compra Five nights at Freddy's (Videojuego)</a></li>
+
+    </ul>
+    </div>
+
+<hr>
+    <footer>
+        <p>2025 Universal Pictures. Todos los derechos reservados. Este sitio web y su contenido están protegidos por las leyes de propiedad intelectual. Universal Pictures es titular de los derechos sobre las imágenes, logotipos, nombres y materiales audiovisuales utilizados en esta página. Queda prohibida su reproducción, distribución o modificación sin autorización expresa.</p>
+
+
+    </footer>
+
+
+
+
+</body>
+</html>
